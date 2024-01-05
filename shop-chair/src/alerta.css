@@ -32,6 +32,7 @@
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     animation: slideDown 4s ease forwards;
+    font-weight: bold
 }
 .mensaje-alerta-error {
     z-index: 1000;
@@ -45,5 +46,6 @@
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     animation: slideDown 4s ease forwards;
+    font-weight: bold
 
 }

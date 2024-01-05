@@ -2,6 +2,7 @@ import React from 'react';
 import ShopContainer from './componentes/ShopContainer';
 import ShopNews from './componentes/ShopNews';
 import FormularioContacto from './componentes/FormularioContacto';
+import Subscription from './componentes/Subscription';
 
 function App() {
 
@@ -123,15 +124,9 @@ function App() {
         </div>
       </section>
 
-      <section className="newsletter" id="contact">
-        <h2>Sucribe to Newsletter</h2>
-        <div className="news-box">
-          <input type="text" placeholder="Enter your email" />
-          <a href="" className="btn">Suscribete</a>
-        </div>
-      </section>
+     
 
-  
+     <Subscription />
 
      <FormularioContacto />
 
