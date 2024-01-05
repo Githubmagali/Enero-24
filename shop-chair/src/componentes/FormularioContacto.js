@@ -1,15 +1,18 @@
 import React, { useState } from "react";
+import './../alerta.css';
 
 const FormularioContacto = () => {
     const [nombre, setNombre] = useState('');
     const [correo, setCorreo] = useState('');
     const [mensaje, setMensaje] = useState('');
+    const [mostrarAlerta, setMostrarAlerta] = useState(false);
+    const [mostrarAlertaError, setMostrarAlertaError] = useState(false);
 
     function handleSubmit(e) {
         e.preventDefault();
       
         if (nombre.trim() === '' || correo.trim() === '' || mensaje.trim() === '') {
-            // Aquí puedes mostrar un mensaje de error o realizar alguna acción adicional si los campos están vacíos
+            setMostrarAlertaError(true)
             return;
         }
 
@@ -20,12 +23,21 @@ const FormularioContacto = () => {
         setNombre('');
         setCorreo('');
         setMensaje('');
+        setMostrarAlerta(true);
+
+       
     }
 
     return (
         <section className="contacto-form" id="contacto-form">
             <div className="contenedor-contacto">
                 <h3>Envíanos un mensaje</h3>
+                {mostrarAlertaError && (
+                    <div className="mensaje-alerta-error">Datos incompletos</div>
+                )}
+                {mostrarAlerta && (
+                    <div className="mensaje-alerta">Datos enviados con exito</div>
+                )}
                 <form action="" className="formulario-contacto" onSubmit={handleSubmit}>
                     <input type="text" placeholder="Nombre completo" value={nombre} onChange={(e) => setNombre(e.target.value)} />
                     <input type="email" placeholder="Correo electrónico" value={correo} onChange={(e) => setCorreo(e.target.value)} />

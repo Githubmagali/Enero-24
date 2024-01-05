@@ -1,4 +1,3 @@
-import './App.css';
 import React from 'react';
 import ShopContainer from './componentes/ShopContainer';
 import ShopNews from './componentes/ShopNews';
