@@ -31,47 +31,12 @@
   transform: translateY(0); /* Muestra la barra de navegación */
 }
 
-.bx-menu {
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 1001;
 
-}
 
 section {
   padding: 50px 10%;
 }
 
-
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 10%;
-  background: #eeeeee;
-  box-shadow: 0 4px 41px rgba(204, 204, 204, 0.14);
-}
-
-.navbar {
-  display: flex;
-}
-
-.navbar a {
-  font-size: 1rem;
-  padding: 11px 10px;
-  color: var(--text-color);
-  font-weight: 600;
-
-}
-
-.navbar a:hover {
-  color: var(--main-color);
-}
 
 
 /*Home*/

@@ -1,17 +1,35 @@
-import React, {useState} from 'react';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import './header.css';
 import Shop from './componentes/Shop';
 import 'boxicons/css/boxicons.min.css';
 
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
 
   return (
     <div>
-      <header>
-        <div className='bx bx-menu' id='menu-icon' ></div>
-        <ul className='navbar'>
+      <div className={`header ${hasScrolled ? "shadow" : ""}`}>
+
+
+        <ul className={`navbar ${isMenuOpen ? "open-menu" : ""}`}>
           <li><a href="#home">Home</a></li>
           <li><a href="#shop">Shop</a></li>
           <li><a href="#delivery">Delivery</a></li>
@@ -19,7 +37,16 @@ function App() {
           <li><a href="#us">Us</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </header>
+        {/*Menu icon */}
+        <div className={`menu-icon ${isMenuOpen ? "move" : ""}`}
+          onClick={toggleMenu}>
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+        </div>
+
+
+      </div>
 
       <section className='home' id="home">
         <div className='home-text'>
