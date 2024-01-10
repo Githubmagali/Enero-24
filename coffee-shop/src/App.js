@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './header.css';
 import Shop from './componentes/Shop';
 import 'boxicons/css/boxicons.min.css';
+import Coffe from './componentes/Coffe';
 
 
 function App() {
@@ -61,7 +62,8 @@ function App() {
       </section>
 
       <Shop />
-
+      <Coffe />
+       
 
       <section className='delivery' id="delivery">
         <div className='heading'>

@@ -25,7 +25,7 @@ const Shop = () => {
 
     return (
         <section>
-            <div className="heading-shop">
+            <div className="heading-shop" id="shop">
                 <span>Shop now</span>
                 <h1>Coffee</h1>
             </div>
