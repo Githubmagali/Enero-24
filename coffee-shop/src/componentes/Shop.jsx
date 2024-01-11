@@ -3,17 +3,17 @@ import React from "react";
 const coffeItems = [
     {
         img: 'img/shop1.png',
-        title: 'Gray chair',
+        title: 'Gray coffee',
         price: '$45'
     },
     {
         img: 'img/shop2.png',
-        title: 'Gray chair',
+        title: 'Gray coffee',
         price: '$45'
     },
     {
         img: 'img/shop3.png',
-        title: 'Gray chair',
+        title: 'Gray coffee',
         price: '$45'
     }
 
