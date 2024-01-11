@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './header.css';
 import Shop from './componentes/Shop';
 import 'boxicons/css/boxicons.min.css';
-import Coffe from './componentes/Coffe';
+import Coffee from './componentes/coffee/Coffee';
 
 
 function App() {
@@ -62,7 +62,7 @@ function App() {
       </section>
 
       <Shop />
-      <Coffe />
+     <Coffee />
        
 
       <section className='delivery' id="delivery">

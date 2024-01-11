@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 
 const coffeItems = [
     {
-        imgSrc: 'img/shop1.png',
+        img: 'img/shop1.png',
         title: 'Gray chair',
         price: '$45'
     },
     {
-        imgSrc: 'img/shop2.png',
+        img: 'img/shop2.png',
         title: 'Gray chair',
         price: '$45'
     },
     {
-        imgSrc: 'img/shop3.png',
+        img: 'img/shop3.png',
         title: 'Gray chair',
         price: '$45'
     }
@@ -33,7 +33,7 @@ const Shop = () => {
                 {coffeItems.map((item, index) => (
                     <div className="box" key={index}>
                         <div className="box-img">
-                            <img src={item.imgSrc} alt={item.title} />
+                            <img src={item.img} alt={item.title} />
                         </div>
                         <h2>{item.title}</h2>
                         <span>{item.price}</span>
