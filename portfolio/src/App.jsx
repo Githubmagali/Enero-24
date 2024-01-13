@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div>
-
       <Header />
       <About />
       <Services />
@@ -21,6 +20,7 @@ function App() {
       {/*Copyright */}
       <div className="copyright">
         <p>&#169; All right Reserved.</p>
+        <p style={{ padding: "20px" }}>magalivictoria000@gmail.com</p>
       </div>
 
 

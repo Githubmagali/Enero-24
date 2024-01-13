@@ -24,7 +24,7 @@ const Header = () => {
     return (<>
         <div className={`header ${hasScrolled ? "shadow" : ""}`}>
             <div className="nav container">
-                <a href="#" className='logo'>Magali</a>
+                <a href="#" className='logo'> Fernandez Magali Victoria</a>
 
                 <div className={`navbar ${isMenuOpen ? "open-menu" : ""}`}>
                     <li><a href="#home" className="nav-link">Home</a></li>
