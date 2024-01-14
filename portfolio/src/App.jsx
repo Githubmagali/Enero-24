@@ -11,10 +11,11 @@ function App() {
 
   return (
     <div>
+
       <Header />
+      <Portfolio />
       <About />
       <Services />
-      <Portfolio />
       <Contact />
 
       {/*Copyright */}
