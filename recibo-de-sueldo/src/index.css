@@ -1,13 +1,88 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 700px;
+}
+.titulo {
+  margin-left: 120px;
+}
+
+.subtitulo {
+  margin-right: 70px;
+}
+
+.section {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+.title {
+  font-weight: bold;
+  padding: 5px;
+}
+.item {
+  padding: 5px;
+}
+
+.container-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-2 {
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.item-3 {
+  padding: 5px;
+  margin-right: 220px;
+}
+.item-4 {
+  padding: 5px;
+  margin-right: 240px;
+}
+.container-renumeracion {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide el contenedor en dos columnas */
+  column-gap: 10px;
+}
+.title-renumeracion {
+  margin-bottom: 10px;
+}
+
+.item-r {
+  margin-left: -20px;
+  border: 1px solid #000;
+}
+
+.renumeracion-grid {
+  margin-top: 30px;
+}
+
+.container-firma {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide el contenedor en dos columnas */
+  column-gap: 10px;
+}
+
+.item-firma-1 {
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
 }
