@@ -7,8 +7,9 @@ import Coffee from "./componentes/coffee/Coffee";
 const Card = ({ toggleCard }) => (
   <div className="card">
     <button onClick={toggleCard}>X</button>
-    <h2>Card Title</h2>
-    <p>Card content goes here.</p>
+    <h2>Our location</h2>
+    <p>Honduras 3754, C1180ACB CABA</p>
+    <p>Moreno 502, C1091AAL CABA</p>
   </div>
 );
 
@@ -76,7 +77,7 @@ function App() {
           <span>Welcome</span>
           <h1>Coffee shop</h1>
           <h2>Take away</h2>
-          <button onClick={toggleCard}>Unirse</button>
+          <button onClick={toggleCard}>Our location</button>
         </div>
         <div className="home-img">
           <img src="img/home.png" />

@@ -13,7 +13,7 @@ export const metadata = {
  const roboto = Roboto({
   weight: ["300", "400"],
   styles: ["italic", "normal"],
-  subjects: ["latin"]
+  subsets: ["latin"],
  })
 
 export default function RootLayout({ children }) {
