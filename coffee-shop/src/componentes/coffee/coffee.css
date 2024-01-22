@@ -49,6 +49,22 @@ span {
   border-radius: 10px;
   cursor: pointer;
 }
+.box-img-shop {
+  width: 100%; /* Asegura que el contenedor tenga el 100% del ancho */
+  height: 0; /* Inicialmente establece la altura en 0 */
+  padding-bottom: 100%; /* Crea un espacio en blanco con la misma proporción que el ancho para hacerlo cuadrado */
+  position: relative; /* Permite posicionar el contenido dentro del contenedor */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga del contenedor */
+}
+
+.box-img-shop img {
+  width: 100%; /* Ajusta la imagen al 100% del ancho del contenedor */
+  height: 100%; /* Ajusta la imagen al 100% de la altura del contenedor (cuadrado) */
+  object-fit: cover; /* Ajusta la imagen manteniendo la relación de aspecto y cubriendo el contenedor */
+  position: absolute; /* Permite posicionar la imagen dentro del contenedor */
+  top: 0; /* Coloca la imagen en la parte superior del contenedor */
+  left: 0; /* Coloca la imagen en la parte izquierda del contenedor */
+}
 
 .box-title {
   text-align: center;
@@ -73,7 +89,6 @@ p {
 @media (max-width: 997px) {
   .box-img {
     height: 320px;
-    border-radius: 14rem 14rem 1rem 1rem;
   }
 }
 
@@ -81,13 +96,14 @@ p {
   .box-img {
     height: 400px;
   }
-  .coffee-box {
-    border-radius: 14rem 14rem 1rem 1rem;
-  }
+
 }
 
 @media (max-width: 400px) {
   .box-img {
+    height: 370px;
+  }
+  .box-img-shop {
     height: 370px;
   }
 }

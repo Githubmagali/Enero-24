@@ -74,7 +74,7 @@ function App() {
 
       <section className="home" id="home">
         <div className="home-text">
-          <span>Welcome</span>
+          <div className="span">Welcome</div>
           <h1>Coffee shop</h1>
           <h2>Take away</h2>
           <button onClick={toggleCard}>Our location</button>
@@ -111,7 +111,7 @@ function App() {
           <div className="container-app">
             <div className="app-text">
               <a href="" className="btn">
-                Descargar app
+              Download app
               </a>
             </div>
             <div className="app-img">

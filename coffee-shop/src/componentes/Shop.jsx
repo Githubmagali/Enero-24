@@ -28,7 +28,7 @@ const Shop = () => {
       <div className="shop-container">
         {coffeItems.map((item, index) => (
           <div className="box" key={index}>
-            <div className="box-img">
+            <div className="box-img-shop">
               <img src={item.img} alt={item.title} />
             </div>
             <h2>{item.title}</h2>
