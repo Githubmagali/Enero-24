@@ -15,8 +15,8 @@
     background: var(--white);
     box-shadow: 1px 4px 14px rgb(15 54 55);
     transition: 0.3s;
-} 
-  
+}
+
   .navbar {
     display: flex;
   }

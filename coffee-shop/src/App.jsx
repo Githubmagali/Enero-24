@@ -3,13 +3,23 @@ import "./header.css";
 import Shop from "./componentes/Shop";
 import "boxicons/css/boxicons.min.css";
 import Coffee from "./componentes/coffee/Coffee";
+import DemoCarousel from "./componentes/carousel/carousel";
 
 const Card = ({ toggleCard }) => (
   <div className="card">
     <button onClick={toggleCard}>X</button>
     <h2>Our location</h2>
     <p>Honduras 3754, C1180ACB CABA</p>
-    <p>Moreno 502, C1091AAL CABA</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1372370683007!2d-58.38622642532899!3d-34.676485661342944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccb8228f238d%3A0x4e7d2cae69803158!2sAv.%20Galicia%20100%2C%20B1868BGA%20Pi%C3%B1eyro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1705963186092!5m2!1ses-419!2sar" 
+     width="100%"
+     height="300"
+    style={{ border: 0 }} 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+
+    </iframe>
+   
   </div>
 );
 
@@ -77,10 +87,12 @@ function App() {
           <div className="span">Welcome</div>
           <h1>Coffee shop</h1>
           <h2>Take away</h2>
-          <button onClick={toggleCard}>Our location</button>
+          <button onClick={toggleCard} className="btn">Our location</button>
         </div>
         <div className="home-img">
-          <img src="img/home.png" />
+          <div className="swp-img">
+            <DemoCarousel />
+          </div>
         </div>
       </section>
 
@@ -89,7 +101,7 @@ function App() {
 
       <section className="delivery" id="delivery">
         <div className="heading">
-          <span>Get now</span>
+          <div className="span">Get now</div>
           <h1>Delivery</h1>
         </div>
         <div className="container-delivery">
@@ -97,7 +109,7 @@ function App() {
             <img src="img/delivery.png" alt="" />
           </div>
           <div className="delivery-text">
-            <a href="" className="btn">
+            <a href="" >
               Order now
             </a>
           </div>
@@ -106,12 +118,12 @@ function App() {
 
       <section className="app" id="app">
         <div className="heading">
-          <span>Our app</span>
+          <div className="span">Our app</div>
           <h1>Download app</h1>
           <div className="container-app">
             <div className="app-text">
               <a href="" className="btn">
-              Download app
+                Download app
               </a>
             </div>
             <div className="app-img">
@@ -121,15 +133,20 @@ function App() {
         </div>
       </section>
 
-      <section className="about" id="about">
-        <div className="about-img">
-          <img src="img/about.png" alt="" />
+      <section className="delivery" id="delivery">
+        <div className="heading">
+          <div className="span">Us</div>
+          <h1>About us</h1>
         </div>
-        <div className="about-text">
-          <h2>About us</h2>
-          <a href="" className="btn">
-            Learn more
-          </a>
+        <div className="container-delivery">
+          <div className="delivery-img">
+            <img src="img/about.png" alt="" />
+          </div>
+          <div className="delivery-text">
+            <a href="" >
+              our history
+            </a>
+          </div>
         </div>
       </section>
 
@@ -153,7 +170,7 @@ function App() {
           <a href="#">Terms of use</a>
           <a href="#">Our Company</a>
         </div>
-        <p>&#169; All Right Reserved.</p>
+        <p>&#169; Magali Victoria Fernandez</p>
       </section>
     </div>
   );

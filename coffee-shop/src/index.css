@@ -19,6 +19,9 @@
   background: white;
   padding: 20px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  width: 80%; /* Ajusta el ancho del card */
+  height: 80%; /* Ajusta la altura del card */
+ 
 }
 
 .app {
@@ -42,6 +45,8 @@
   --bck-color: #fffcfc;
   --backg-color: #8a8585;
 }
+
+
 
 /*Navbar */
 
@@ -100,29 +105,11 @@ section {
   flex: 1 1 17rem;
 }
 
-img {
+.swp-img {
   width: 100%;
 }
 
-/*
-.home-img img {
-  animation: animate 3s linear infinite;
-}
 
-@keyframes animate {
-  0% {
-    transform: translate(-11px, 0);
-  }
-
-  50% {
-    transform: translate(-0px, -11px);
-  }
-
-  100% {
-    transform: translate(-11px, 0);
-  }
-}
-*/
 
 .home-text span {
   font-size: 1rem;
@@ -143,17 +130,19 @@ img {
   background: var(--main-color);
 }
 
+/*Heading*/
+
 .heading {
   text-align: center;
 }
 
-.heading span {
+.heading .span {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--bck-color);
+  color: var(--text-color);
 }
 
-.heading h1 {
+.heading h1{
   font-size: 2rem;
   color: var(--main-color);
 }
@@ -241,10 +230,11 @@ img {
 }
 
 .delivery-text a,
-.app-text a {
+.app-text a,
+.about-text a{
   color: var(--second-color);
   padding: 8px 10px;
-  background-color: var(--bck-color);
+  background-color: var(--backg-color);
   border-radius: 8px;
   font-weight: 600;
 }
@@ -269,15 +259,6 @@ img {
   width: 40px;
 }
 
-.app-text h2 {
-  font-size: 1.2rem;
-  color: var(--main-color);
-}
-
-.app-text p {
-  margin: 0.5em 0 1rem;
-  text-align: justify;
-}
 
 /*About */
 
@@ -303,21 +284,11 @@ img {
   margin-right: 110px;
   margin-top: 60px;
 }
-.about-text h2 {
+.about-text h1 {
   margin-bottom: 20px; /* Ajusta el valor según tu preferencia */
 }
 
-.about-text a {
-  color: var(--second-color);
-  padding: 8px 10px;
-  background-color: var(--bck-color);
-  border-radius: 8px;
-  font-weight: 600;
-}
-.about-text a:hover {
-  background: #ddd6cc;
-  color: #5c5a5a;
-}
+
 
 /* Contact */
 
