@@ -59,7 +59,7 @@ function App() {
             <a href="#shop">Shop</a>
           </li>
           <li>
-            <a href="#delivery">Delivery</a>
+            <a href="#menu">Menu</a>
           </li>
           <li>
             <a href="#app">App</a>
@@ -99,19 +99,40 @@ function App() {
       <Shop />
       <Coffee />
 
-      <section className="delivery" id="delivery">
+      <section className="menu" id="menu">
         <div className="heading">
-          <div className="span">Get now</div>
-          <h1>Delivery</h1>
+          <div className="span">Our menu</div>
+          <h1>Menu</h1>
         </div>
-        <div className="container-delivery">
-          <div className="delivery-img">
-            <img src="img/delivery.png" alt="" />
+        <div className="container-menu">
+       
+          <div className="menu-branch">
+            <h2>Brunch</h2>
+            <div className="menu-lis">
+            <li>scrambled eggs</li>
+            <div>two toasts with scrambled egg</div>
+            <li>Croissant</li>
+            <div>of butter or fat</div>
+            <li>Brownie</li>
+            <div>with chocolate chips</div>
+            <li>Cookies</li>
+            <div>with chocolate chips</div>
+            </div>
           </div>
-          <div className="delivery-text">
-            <a href="" >
-              Order now
-            </a>
+          <div className="menu-coffee">
+            <h2>Coffee</h2>
+            <div className="menu-lis">
+            <li>Expresso</li>
+            <div>black coffee</div>
+            <li>Cappuccino</li>
+            <div>coffee with chocolate</div>
+            <li>Ristretto</li>
+            <div>short made with a normal amount of ground coffee</div>
+            <li>Americano</li>
+            <div>soft coffee</div>
+            <li>Lungo</li>
+            <div>espresso but with double the water</div>
+            </div>
           </div>
         </div>
       </section>

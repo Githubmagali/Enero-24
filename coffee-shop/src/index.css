@@ -208,8 +208,36 @@ section {
   background: #ddd6cc;
   color: #5c5a5a;
 }
+/*Menu*/
+.container-menu{
+  display: flex;
+}
 
-/* Delivery y app */
+.menu-branch{
+  flex: 1 1 21rem;
+  text-align: center;
+  margin-top: 190px;
+
+}
+.menu-branch h2, .menu-coffee h2{
+  padding: 10px;
+}
+.menu-coffee{
+  flex: 1 1 21rem;
+  text-align: center;
+  margin-top: 190px;
+}
+.menu-lis li{
+  padding: 5px;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.menu-lis li:hover{
+  color: var(--main-color);
+}
+
+/* app */
 
 .container-delivery {
   display: flex;
