@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
-import Shop from "./componentes/Shop";
+import StoreCoffee from "./componentes/storeCoffee/storeCoffee";
 import "boxicons/css/boxicons.min.css";
 import Coffee from "./componentes/coffee/Coffee";
 import DemoCarousel from "./componentes/carousel/carousel";
+import { CartProvider } from "./CartContext";
+import CartDisplay from "./componentes/storeCoffee/cartDisplay";
+import Menu from "./componentes/menu/menu";
+
 
 const Card = ({ toggleCard }) => (
   <div className="card">
@@ -17,7 +21,6 @@ const Card = ({ toggleCard }) => (
     allowfullscreen="" 
     loading="lazy" 
     referrerpolicy="no-referrer-when-downgrade">
-
     </iframe>
    
   </div>
@@ -96,46 +99,12 @@ function App() {
         </div>
       </section>
 
-      <Shop />
+   <CartProvider>
+     <StoreCoffee />
+     <CartDisplay />
+     </CartProvider>
       <Coffee />
-
-      <section className="menu" id="menu">
-        <div className="heading">
-          <div className="span">Our menu</div>
-          <h1>Menu</h1>
-        </div>
-        <div className="container-menu">
-       
-          <div className="menu-branch">
-            <h2>Brunch</h2>
-            <div className="menu-lis">
-            <li>scrambled eggs</li>
-            <div>two toasts with scrambled egg</div>
-            <li>Croissant</li>
-            <div>of butter or fat</div>
-            <li>Brownie</li>
-            <div>with chocolate chips</div>
-            <li>Cookies</li>
-            <div>with chocolate chips</div>
-            </div>
-          </div>
-          <div className="menu-coffee">
-            <h2>Coffee</h2>
-            <div className="menu-lis">
-            <li>Expresso</li>
-            <div>black coffee</div>
-            <li>Cappuccino</li>
-            <div>coffee with chocolate</div>
-            <li>Ristretto</li>
-            <div>short made with a normal amount of ground coffee</div>
-            <li>Americano</li>
-            <div>soft coffee</div>
-            <li>Lungo</li>
-            <div>espresso but with double the water</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Menu />
 
       <section className="app" id="app">
         <div className="heading">

@@ -1,0 +1,29 @@
+.container-menu{
+    display: flex;
+  }
+  
+
+  .menu-branch h2, .menu-coffee h2{
+    padding: 10px;
+    
+  }
+  .menu-branch{
+    flex: 1 1 21rem;
+    text-align: center;
+    margin-top: 10px;
+    
+  }
+  .menu-coffee{
+    flex: 1 1 21rem;
+    text-align: center;
+   margin-top: 10px;
+  }
+  .menu-lis li{
+    padding: 5px;
+    color: var(--text-color);
+    font-weight: 700;
+  }
+  
+  .menu-lis li:hover{
+    color: var(--main-color);
+  }
