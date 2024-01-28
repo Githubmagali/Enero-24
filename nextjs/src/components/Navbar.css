@@ -1,5 +1,5 @@
 .navbar{
-    background: #f5ecec;
+    background: #e0e0e0;
     display: flex;
     justify-content: space-between;
     padding:1rem 4rem;
@@ -16,5 +16,9 @@
 }
 .navbar a{
     text-decoration: none;
+    color: #020202;
+}
+.navbar a:hover{
+    color: #c5bdbd;
 }
 
