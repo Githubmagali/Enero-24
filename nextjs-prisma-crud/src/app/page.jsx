@@ -13,11 +13,13 @@ async function loadTasks(){
 async function HomePage(){
  const tasks = await loadTasks()
 
+
+
   return(
     <section className="container mx-auto">
-   <div className="grid xl:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+   <div className="grid xl:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-5">
     {tasks.map(task =>(
-      <TaskCard  task={task} key={task.id}/>
+      <TaskCard  task={task} key={task.id} />
     ))}
   </div>
   <div className="flex justify-center mt-10">

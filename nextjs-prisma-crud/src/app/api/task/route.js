@@ -12,7 +12,7 @@ export async function POST(request){
     const {title, description} = await request.json()
 
    const newTask = await prisma.task.create({
-        data:{
+        data: {
             title,
             description,
         },

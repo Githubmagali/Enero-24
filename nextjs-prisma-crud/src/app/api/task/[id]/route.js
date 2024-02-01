@@ -26,12 +26,12 @@ export async function PUT(request, {params}){
 export async function DELETE(request, {params}){
     try{
         
-    const taskRemove = await prisma.task.delete({
+    const taskRemoved = await prisma.task.delete({
         where: {
             id: Number(params.id)
         }
     })
-    return NextResponse.json(taskRemove);
+    return NextResponse.json(taskRemoved);
 
     } catch(error){
         return NextResponse.json(error.message);
