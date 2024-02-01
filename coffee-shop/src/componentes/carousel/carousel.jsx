@@ -32,7 +32,7 @@ const DemoCarousel = () => {
       {overlayVisible && (
         <div className="overlay" onClick={closeOverlay}>
           <div className="card-2" onClick={(e) => e.stopPropagation()}>
-            <Carousel showArrows={true} selectedItem={0} infiniteLoop={true}>
+            <Carousel  showArrows={true} selectedItem={0} infiniteLoop={true}>
               {Img.map((item, index) => (
                 <div key={index} className="img-container">
                   <img src={item.img} alt={item.title} className="img" />
@@ -42,7 +42,7 @@ const DemoCarousel = () => {
           </div>
         </div>
       )}
-
+ 
     </>
   );
 
