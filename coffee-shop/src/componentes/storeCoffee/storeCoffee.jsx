@@ -8,7 +8,7 @@ const coffeItems = [
     id:1,
     img: "img/shop1.png",
     title: "Expresso",
-    price: 0,
+    price: 10,
     soldOut: false,
   },
   {
