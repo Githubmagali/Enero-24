@@ -7,10 +7,13 @@ import DemoCarousel from "./componentes/carousel/carousel";
 import { CartProvider } from "./CartContext";
 import CartDisplay from "./componentes/storeCoffee/cartDisplay";
 import Menu from "./componentes/menu/menu";
+import { Pattern } from "./componentes/pattern/Pattern";
 
 const Card = ({ toggleCard }) => (
   <div className="card">
-    <button onClick={toggleCard} className="btn-close">X</button>
+    <button onClick={toggleCard} className="btn-close">
+      X
+    </button>
     <h2>Our location</h2>
     <p>Av Galicia 100, B1868BGA CABA</p>
     <iframe
@@ -101,6 +104,7 @@ function App() {
 
       <CartProvider>
         <StoreCoffee />
+        <Pattern parameter="pattern--wow" />
         <CartDisplay />
       </CartProvider>
       <Coffee />
