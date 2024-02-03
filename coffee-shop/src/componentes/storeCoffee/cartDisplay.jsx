@@ -9,10 +9,11 @@ const CartDisplay = () => {
     <div className="cart-display">
       <h2>Your Cart</h2>
       {cart.length > 0 ? (
-        <ul >
+        <ul>
           {cart.map((item, index) => (
             <li key={index} className="cart-items">
-              {item.name} - {item.quantity} x ${item.price}
+              {item.title.charAt(0).toUpperCase() + item.title.slice(1)} -{" "}
+              {item.quantity} x ${item.price}
             </li>
           ))}
         </ul>
