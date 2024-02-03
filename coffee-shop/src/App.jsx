@@ -103,8 +103,8 @@ function App() {
       </section>
 
       <CartProvider>
-        <StoreCoffee />
         <Pattern parameter="pattern--wow" />
+        <StoreCoffee />
         <CartDisplay />
       </CartProvider>
       <Coffee />
