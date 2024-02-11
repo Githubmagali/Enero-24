@@ -1,22 +1,44 @@
-import React from "react";
+import React, {useState} from "react";
+import Mail from './mail/Mail'
 import "./about.css";
-import Mail from "./Mail";
+
 
 const About = () => {
+
+  const [overlayVisible, setOverlayVisible] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openOverlay = () => {
+    setOverlayVisible(true);
+  };
+
+  const closeOverlay = () => {
+    setSelectedImage(null);
+    setOverlayVisible(false);
+
+  };
+
+
   return (
     <>
       {/*Home*/}
       <section className="home" id="home">
         <div className="home-text">
           <span>Hola!</span>
-          <h2>Programadora de desarrollo web front end</h2>
-          <button to="" className="btn">CONTACTA ME</button>
+          <h2>Programadora de desarrollo web full stack</h2>
+          <button to="" className="btn" onClick={() => openOverlay()}>CONTACTAME</button>
         
         </div>
         <div className="home-img">
           <img src="img-.png" alt="" />
         </div>
       </section>
+      {overlayVisible && (
+          <Mail setOverlayVisible={setOverlayVisible} setSelectedImage={setSelectedImage}/>
+      )}
+      
+
+      
 
       {/*About*/}
       <section className="about" id="about">

@@ -9,7 +9,7 @@
     padding: 200px;
   }
   
-  
+ 
   .home-text span{
     font-size: 1.5rem;
     font-weight: 600;
@@ -32,6 +32,7 @@
     color: #857575;
     font-weight: 800;
     border-radius: 7px;
+    margin-top: 22px;
   }
   .btn:hover{
     background: var(--btn-hov-color);
@@ -72,9 +73,7 @@
     color: #000;
   }
   
-  .container-mail{
-    background: #d7d0d0;
-  }
+ 
   .mail{
     text-align: center;
   }
