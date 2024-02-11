@@ -13,9 +13,10 @@ const Mail =({setOverlayVisible, setSelectedImage})=>{
 
 
     return(
-        <div className="overlay"  onClick={closeOverlay}>
+        <div className="overlay">
              <div className="mail">
-                <h1>Magalivictoria000@gmail.com</h1>
+                <button className="btn-mail" onClick={closeOverlay}>X</button>
+                <h1>Magalivictoria85068@gmail.com</h1>
            
         </div>
 

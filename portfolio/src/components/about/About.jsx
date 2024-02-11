@@ -41,6 +41,17 @@ const About = () => {
       
 
       {/*About*/}
+      <div className="social">
+        <a href="https://github.com/Githubmagali">
+          <i className="bx bxl-github"></i>
+        </a>
+        <a href="mailto:magalivictoria85068@gmail.com">
+          <i className="bx bxl-gmail"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/magali-fernandez-60a207210/">
+          <i className="bx bxl-linkedin"></i>
+        </a>
+      </div>
       <section className="about" id="about">
         <div className="about-title">
           <h1>
@@ -56,17 +67,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      <div className="social">
-        <a href="https://github.com/Githubmagali">
-          <i className="bx bxl-github"></i>
-        </a>
-        <a href="mailto:magalivictoria000@gmail.com">
-          <i className="bx bxl-gmail"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/magali-fernandez-60a207210/">
-          <i className="bx bxl-linkedin"></i>
-        </a>
-      </div>
     </>
   );
 };

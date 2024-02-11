@@ -48,6 +48,9 @@
     width: 100%;
   }
   
+
+
+
   .social{
     text-align: center;
   }
@@ -55,11 +58,16 @@
   .social .bx{
     padding: 20px;
     color: #000;
+    font-size: 5rem;
   }
   .social .bx:hover{
     color: #858383;
   }
   
+
+
+
+
   .heading{
     text-align: center;
   }

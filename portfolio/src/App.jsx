@@ -21,7 +21,7 @@ function App() {
       {/*Copyright */}
       <div className="copyright">
         <p>&#169; All right Reserved.</p>
-        <p style={{ padding: "20px" }}>magalivictoria000@gmail.com</p>
+        <p style={{ padding: "20px" }}>Magali Victoria Fernandez</p>
       </div>
 
 
