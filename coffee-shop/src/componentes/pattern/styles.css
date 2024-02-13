@@ -1,0 +1,47 @@
+/* 
+================================================
+INFINTE PATTERN ================================
+================================================
+*/
+.pattern {
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-row-gap: 0;
+  overflow: hidden;
+}
+
+.pattern-single-stripe {
+  width: 500%;
+  position: relative;
+  left: -100% !important;
+  height: 16px;
+  display: grid;
+  overflow: hidden;
+}
+
+.pattern__stripe {
+  height: 100%;
+  width: 300%;
+}
+
+.pattern__stripe {
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: bottom left;
+}
+
+.pattern--wow .pattern__stripe--top {
+  background-image: url("../../../public/img/home-wow-pattern-top.svg");
+}
+.pattern--wow .pattern__stripe--bottom {
+  background-image: url("../../../public/img/home-wow-pattern-bottom.svg");
+}
+
+.pattern--colorful .pattern__stripe--top {
+  background-image: url("../../../public/img/home-wow-pattern-top.svg");
+}
+.pattern--colorful .pattern__stripe--bottom {
+  background-image: url("../../../public/img/home-wow-pattern-bottom.svg");
+}
