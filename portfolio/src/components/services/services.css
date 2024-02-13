@@ -11,10 +11,12 @@
     padding: 20px;
     border-radius: 0 0 0 0;
     box-shadow: 10px 11px 11px rgb(14 55 54 /15%);
+    cursor: pointer;
   }
   
   .services-container .box .bx{
     font-size: 30px;
+    
   }
   
   .services-container .box:hover{
