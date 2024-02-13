@@ -1,21 +1,20 @@
 .carousel-container {
-    width: 100%;
-    max-width: 100%; /* Asegura que el Carousel ocupe todo el ancho disponible */
-  }
-  
-  .img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%; /* Ajusta la altura del contenedor */
-  }
-  
-  .img {
-    width: auto; /* Hace que la imagen ocupe todo el ancho del contenedor */
-    max-height: 100%; /* Ajusta la altura de la imagen */
-  }
-  
-  
+  width: 100%;
+  max-width: 100%; /* Asegura que el Carousel ocupe todo el ancho disponible */
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ajusta la altura del contenedor */
+}
+
+.img {
+  width: auto; /* Hace que la imagen ocupe todo el ancho del contenedor */
+  max-height: 100%; /* Ajusta la altura de la imagen */
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -26,6 +25,10 @@
   z-index: 1001;
 }
 
+.thumbs-wrapper {
+  display: flex;
+  justify-content: center;
+}
 
 .card-2 {
   position: fixed;
