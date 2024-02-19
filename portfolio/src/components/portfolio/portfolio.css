@@ -31,6 +31,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   top: -100%;
   left: 0;
@@ -39,7 +40,6 @@
   overflow: hidden;
   background: rgb(28, 40, 68, 0.8);
   color: #f2eeee;
-  justify-content: center;
   }
   
   .portfolio-container .box:hover .content{
