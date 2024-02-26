@@ -1,5 +1,6 @@
 "use client"
 import { useCart } from "@/context/cartProvider";
+import Link from "next/link";
 
 
 function NavbarPage() {
@@ -8,7 +9,7 @@ function NavbarPage() {
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center bg-slate-100 ">
-            <h1 className="font-bold text-yellow-900 hover:text-gray-400 m-4 px-10 text-2xl">Coffe</h1>
+            <Link href="/"  className="font-bold text-yellow-900 hover:text-gray-400 m-4 px-10 text-2xl">Coffe</Link>
             <ul className="flex space-x-9 m-4 px-4">
                 <li className="">
                     <a href="#location" className="hover:text-slate-500 text-xl">Location</a>

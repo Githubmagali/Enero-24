@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import { useCart } from "@/context/cartProvider";
+import Link from "next/link";
 
 
 function CartDisplay() {
@@ -23,7 +24,7 @@ function CartDisplay() {
                 <p className="">No items in cart.</p>
             )}
             <p className="">Total Cost: ${totalCost}</p>
-            <button className="py-2 px-9 bg-gray-200 hover:bg-gray-300 rounded-lg">Buy</button>
+            <Link href="/orderCart" className="py-2 px-9 bg-gray-200 hover:bg-gray-300 rounded-lg">Buy</Link>
         </div>
 
     )

@@ -16,7 +16,8 @@ function MapPage() {
                     <h1 className="font-extrabold lg:text-7xl m-3 ">Welcome !</h1>
                     <h2 className='text-center text-xl m-2'>The kingdom of coffee</h2>
                     <h3 className='text-center mt-8'>Take away</h3>
-                    <button onClick={toggleCard} className='my-9 p-4 font-bold bg-gray-50 rounded-md hover:bg-gray-100'>Our location</button>
+                    <button onClick={toggleCard} 
+                    className='my-9 p-4 font-bold bg-gray-300 rounded-md hover:bg-gray-600 hover:text-white'>Our location</button>
                 </div>
                 <div className='flex flex-col items-center lg:w-3/5 '>
                        <CarouselPage />
