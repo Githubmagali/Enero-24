@@ -1,0 +1,25 @@
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid:1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .services-container .box{
+    text-align: center;
+    border: 2px solid var(--text-color);
+    padding: 20px;
+    border-radius: 0 0 0 0;
+    box-shadow: 10px 11px 11px rgb(14 55 54 /15%);
+    cursor: pointer;
+  }
+  
+  .services-container .box .bx{
+    font-size: 30px;
+    
+  }
+  
+  .services-container .box:hover{
+    background: #f2eeee;
+    color: #000;
+  }

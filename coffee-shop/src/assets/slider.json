@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Americano",
+    "subtitle": "Expresso with hot water",
+    "img": "img/shop1.png"
+  },
+  {
+    "title": "Cappuccino",
+    "subtitle": "chocolate with coffee",
+    "img": "img/coffee-2.png"
+  },
+  {
+    "title": "Expresso",
+    "subtitle": "1oz expresso",
+    "img": "img/coffee-3.png"
+  },
+  {
+    "title": "Macchiato",
+    "subtitle": "Espresso shot",
+    "img": "img/coffee-4.png"
+  },
+  {
+    "title": "Lungo",
+    "subtitle": "Long pulled expresso",
+    "img": "img/coffee-5.png"
+  },
+  {
+    "title": "Ristretto",
+    "subtitle": "short pulled expresso",
+    "img": "img/coffee-6.png"
+  }
+]
+

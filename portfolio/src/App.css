@@ -1,0 +1,142 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Figtree:wght@300&family=Noto+Sans:wght@200&family=Roboto:ital,wght@1,100&display=swap');
+*{
+margin:0;
+padding: 0;
+scroll-behavior: smooth;
+scroll-padding-top: 2rem;
+list-style: none;
+text-decoration: none;
+box-sizing: border-box;
+font-family:'Courier New', Courier, monospace;
+}
+@import "~boxicons/css/boxicons.min.css";
+section{
+  padding:50px 10%
+}
+
+:root{
+  --main-color: #857575;
+  --text-color: #949191;
+  --hover-color: #918e8e;
+  --btn-color:#f5efef;
+  --btn-hov-color:#f1eded;
+}
+
+img{
+  width: 100%;
+}
+body{
+  color: var(--main-color);
+}
+*::selection{
+  color: #dbd9d9;
+  background: var(--main-color);
+}
+
+/*Custom scroll bar*/
+
+html::-webkit-scrollbar{
+  width: 0.5rem;
+}
+html::-webkit-scrollbar-track{
+   background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
+.copyright{
+  text-align: center;
+  padding: 20px;
+}
+
+/*Responsive*/
+@media(max-width: 991px){
+  header{
+    padding: 18px 4%;
+  }
+  section{
+    padding: 50px 4%;
+    display: flex; /* Utilizamos flexbox para centrar el contenido */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    flex-direction: column; /* Apilamos el contenido verticalmente */
+  }
+}
+
+@media(max-width: 881px){
+  .home-text{
+    text-align: center;
+  }
+  .home-text span{
+    font-size: 1.1rem;
+  }
+  .home-text h1{
+    font-size: 3rem;
+  }
+  .home-text h2{
+    font-size: 1.2rem;
+  }
+  p{
+    font-size: 0.938rem;
+  }
+}
+
+@media(max-width: 768px){
+  section {
+    padding: 50px 4%;
+  }
+  header{
+    padding: 11px 4%;
+  }
+ .home-text span{
+  font-size: 1rem;
+ }
+ .home-text h1{
+  font-size: 2.4rem;
+ }
+ .home-text h2{
+  font-size: 1rem;
+ }
+ .home-text p {
+  font-size: 0.938rem;
+ }
+ 
+}
+
+@media(max-width:618px){
+  .home-img,
+  .about-img {
+    padding: 10px;
+    display: flex; /* Utilizamos flexbox para centrar la imagen */
+    justify-content: center; /* Centramos horizontalmente */
+  }
+}
+@media(max-width: 350px){
+  .home-text h1,
+  .home-text h2 {
+    text-align: center;
+  }
+
+  
+  .home-text h1{
+    font-size: 2rem;
+  }
+  .home-text h2{
+    font-size: 1rem;
+  }
+  .btn{
+    padding: 0.6rem 1.7rem;
+  }
+  .about-title h1{
+  font-size: 1.4rem;
+  }
+  .about-title h2{
+    font-size: 0.9rem;
+  }
+  .heading h1{
+    font-size: 1.4rem;
+  }
+}
